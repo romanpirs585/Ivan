@@ -392,3 +392,13 @@ html.lenis,html.lenis body{height:auto}
 .g .ph{aspect-ratio:var(--ar,4/3)}
 @media (max-width:960px){.grid{column-count:2;column-gap:20px}.g{margin-bottom:22px}}
 @media (max-width:640px){.grid{column-gap:12px}.g{margin-bottom:16px}.g figcaption{font-size:12px;padding-top:8px}.g figcaption i{display:none}}
+
+/* ===== v9: phone stability ===== */
+.preloader{overflow:hidden}
+html,body{overflow-x:clip;max-width:100%}
+.hero-media img{backface-visibility:hidden}
+@media (hover:none){
+  .hero-media{inset:-6% 0}
+  .hero-media,.hero-media img{will-change:transform}
+  .dust{display:none}
+}

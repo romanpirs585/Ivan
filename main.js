@@ -1,5 +1,6 @@
 (() => {
   gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ ignoreMobileResize: true }); // phone address-bar show/hide must not re-layout the page
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -123,7 +124,7 @@
     heroLight.r += (heroLight.tr - heroLight.r) * .05;
     gsap.set(veil, { x: heroLight.x * hero.clientWidth, y: heroLight.y * hero.clientHeight, xPercent: -50, yPercent: -50, scale: heroLight.r / 26 * 1.6 });
     // subtle camera tilt toward the light
-    gsap.set(heroMedia, { x: Math.round((heroLight.x - .5) * -26) });
+    if (!isTouch) gsap.set(heroMedia, { x: Math.round((heroLight.x - .5) * -26) }); // no sideways shift on phones
 
     spread += (spreadT - spread) * .05;
     ctx.clearRect(0, 0, dw, dh);
