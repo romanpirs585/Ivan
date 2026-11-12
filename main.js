@@ -60,6 +60,7 @@
     .to(L, { lr: 38, lx: 18, ly: 55, duration: 1.6, ease: 'power2.out', onUpdate: applyL }, 0.2)
     .to(L, { lx: 82, ly: 48, lr: 44, duration: 1.9, ease: 'sine.inOut', onUpdate: applyL }, 1.6)
     .to(L, { lx: 50, ly: 50, lr: 150, duration: 1.6, ease: 'power2.inOut', onUpdate: applyL }, 3.2)
+    .to('.pre-quip', { opacity: 1, y: 0, duration: 1.4, ease: 'power2.out' }, 1.2)
     .to('.pre-line i', { scaleX: 1, duration: 4.6, ease: 'power1.inOut' }, 0)
     .to(counter, { v: 100, duration: 4.6, ease: 'power1.inOut', onUpdate: () => { num.textContent = String(Math.round(counter.v)).padStart(3, '0'); } }, 0)
     .to('.pre-inner', { y: -20, opacity: 0, duration: 0.7, ease: 'power2.in' }, '+=0.15')
@@ -126,6 +127,7 @@
     // subtle camera tilt toward the light
     if (!isTouch) gsap.set(heroMedia, { x: Math.round((heroLight.x - .5) * -26) }); // no sideways shift on phones
 
+    if (isTouch) return; // phones: no dust canvas, keeps the page smooth
     spread += (spreadT - spread) * .05;
     ctx.clearRect(0, 0, dw, dh);
     const mx = heroLight.x * dw, my = heroLight.y * dh;
