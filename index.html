@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samara Gips — лепнина из гипса ручной работы</title>
+<meta name="description" content="Samara Gips — студия гипсовой лепнины Ивана Абрамашвили в Алматы. Работаем по всему Казахстану: карнизы, молдинги, розетки, стеновые панели.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading">
+
+<!-- ORNAMENT SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 48 48">
+    <path d="M12 4h24l8 8v24l-8 8H12l-8-8V12z" stroke-width="1.8"/><path d="M14 8.5h20l5.5 5.5v20L34 39.5H14L8.5 34V14z" stroke-width=".8" opacity=".6"/><path d="M31 15.5C27.5 12.5 18 13 18 19.2c0 7.8 13.5 4.8 13.5 12.3 0 5.5-8 6.8-14 3.2" stroke-width="3.2"/>
+  </symbol>
+  <symbol id="orn" viewBox="0 0 200 200">
+    <path pathLength="1" d="M100 100C100 80 126 80 126 100C126 126 90 132 80 106C70 74 106 54 136 70C172 90 160 142 120 152"/>
+    <path pathLength="1" d="M120 152C150 168 176 152 190 124C170 136 150 136 136 124"/>
+    <path pathLength="1" d="M80 106C60 118 40 112 22 92C44 94 60 90 70 80"/>
+    <path pathLength="1" d="M136 70C140 48 156 34 178 30C176 50 164 62 150 66"/>
+    <path pathLength="1" d="M100 100C92 112 104 122 112 114"/>
+  </symbol>
+</svg>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <div class="pre-media" id="preMedia"><img src="img/statues-hero.jpg" alt=""></div>
+  <div class="pre-veil" id="preVeil"></div>
+  <div class="pre-vignette"></div>
+  <div class="pre-inner">
+    <svg class="pre-mark" viewBox="0 0 48 48"><use href="#logo"/></svg>
+    <div class="pre-brand"><span>Samara</span> <em>Gips</em></div>
+    <div class="pre-meta"><span>Зажигаем свет в мастерской</span><b id="preNum">000</b></div>
+    <div class="pre-line"><i></i></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <a href="#top" class="logo" aria-label="Samara Gips"><svg class="mark" viewBox="0 0 48 48"><use href="#logo"/></svg><span class="word"><b>Samara Gips</b><small>лепнина · Алматы</small></span></a>
+  <nav class="nav">
+    <a href="#about">О студии</a>
+    <a href="#services">Что делаем</a>
+    <a href="#gallery">Работы</a>
+    <a href="#process">Процесс</a>
+    <a href="#contact" class="nav-cta">Связаться</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Меню"><i></i><i></i></button>
+</header>
+<div class="mobile-menu" id="mmenu">
+  <a href="#about">О студии</a><a href="#services">Что делаем</a><a href="#gallery">Работы</a><a href="#process">Процесс</a><a href="#contact">Связаться</a>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-media" id="heroMedia">
+    <img class="lit-base" src="img/statues-hero.jpg" alt="Гипсовые скульптуры в тёмном зале">
+  </div>
+  <div class="veil" id="heroVeil"></div>
+  <canvas class="dust" id="dust"></canvas>
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Студия гипсовой лепнины · Алматы</p>
+    <h1 class="hero-title">
+      <span class="line"><span>Вылеплено,</span></span>
+      <span class="line"><span>не&nbsp;<em>построено.</em></span></span>
+    </h1>
+    <div class="hero-row">
+      <a class="go" href="#gallery" id="go" aria-label="Смотреть работы"><svg viewBox="0 0 24 24"><path d="M12 4v16M6 14l6 6 6-6"/></svg></a>
+      <p class="hero-cap">Гипсовая лепнина ручной работы.<br>
+        <span class="cap-hover">Проведите лучом по&nbsp;залу — гипс оживает.</span>
+        <span class="cap-touch">Алматы · работаем по&nbsp;всему Казахстану.</span></p>
+    </div>
+  </div>
+  <div class="corner"><span>Листайте вниз</span><i></i>
+    <button class="sound" id="sound" aria-pressed="false" aria-label="Фоновый звук"><svg viewBox="0 0 24 24"><path d="M4 9.5v5h3.5L12 18V6L7.5 9.5Z"/><path class="w" d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/><path class="x" d="m16 10 4 4m0-4-4 4"/></svg></button>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Карнизы</span><svg viewBox="0 0 200 200"><use href="#orn"/></svg>
+    <span>Молдинги</span><svg viewBox="0 0 200 200"><use href="#orn"/></svg>
+    <span>Розетки</span><svg viewBox="0 0 200 200"><use href="#orn"/></svg>
+    <span>Стеновые панели</span><svg viewBox="0 0 200 200"><use href="#orn"/></svg>
+    <span>Колонны</span><svg viewBox="0 0 200 200"><use href="#orn"/></svg>
+    <span>Карнизы</span><svg viewBox="0 0 200 200"><use href="#orn"/></svg>
+    <span>Молдинги</span><svg viewBox="0 0 200 200"><use href="#orn"/></svg>
+    <span>Розетки</span><svg viewBox="0 0 200 200"><use href="#orn"/></svg>
+    <span>Стеновые панели</span><svg viewBox="0 0 200 200"><use href="#orn"/></svg>
+    <span>Колонны</span><svg viewBox="0 0 200 200"><use href="#orn"/></svg>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+  <svg class="bg-orn" viewBox="0 0 200 200" data-speed="-0.15"><use href="#orn"/></svg>
+  <div class="wrap about-grid">
+    <div class="about-text">
+      <p class="eyebrow">О студии</p>
+      <h2 class="split">Мы лепим то, что раньше называли «архитектурой дворцов»</h2>
+      <p class="lead reveal-up">«Samara Gips» — это мастерская в Алматы, работающая по всему Казахстану, где классический декор получает современный характер. Каждый элемент отливается и дорабатывается вручную: фактура живая, линии чистые, свет ложится так, как задумал дизайнер.</p>
+      <div class="founder reveal-up">
+        <div class="founder-mark">ИА</div>
+        <div><b>Иван Абрамашвили</b><span>основатель, мастер-лепщик</span></div>
+      </div>
+    </div>
+    <div class="about-visual">
+      <div class="frame frame-a"><img src="img/fireplace.jpg" alt="Каминный портал из гипса" data-speed="0.12"></div>
+      <div class="frame frame-b"><img src="img/rosette-gold.jpg" alt="Золочёная потолочная розетка" data-speed="-0.1"></div>
+    </div>
+  </div>
+  <div class="wrap stats">
+    <div class="stat"><b data-count="15" data-suffix="+">0</b><span>более 15 лет опыта</span></div>
+    <div class="stat"><b data-count="1000" data-suffix="+">0</b><span>более 1&nbsp;000 реализованных объектов</span></div>
+    <div class="stat"><b data-count="100" data-suffix="%">0</b><span>гипс, ручная работа</span></div>
+    <div class="stat"><b>KZ</b><span>работаем по всему Казахстану</span></div>
+  </div>
+</section>
+
+<!-- SERVICES: stacked cards -->
+<section class="services" id="services">
+  <div class="wrap services-head">
+    <p class="eyebrow">Что делаем</p>
+    <h2 class="split">Четыре направления — один почерк</h2>
+  </div>
+  <div class="stack">
+    <article class="card" style="--bg:#d9dcc6">
+      <div class="card-text">
+        <span class="num">01</span>
+        <h3>Карнизы и&nbsp;плинтусы</h3>
+        <p>Профильные и орнаментальные карнизы с&nbsp;розами, пальметтой, акантом и&nbsp;зубчиками. Скрывают стыки, добавляют потолку глубину и&nbsp;подсветку.</p>
+        <ul><li>Гладкие и&nbsp;рельефные профили</li><li>Подсветка в&nbsp;нише</li><li>Углы и&nbsp;вставки</li></ul>
+      </div>
+      <div class="card-img"><img src="img/cornice-vine.jpg" alt="" data-speed="0.1"></div>
+    </article>
+    <article class="card" style="--bg:#c8ccb0">
+      <div class="card-text">
+        <span class="num">02</span>
+        <h3>Молдинги и&nbsp;панели</h3>
+        <p>Рамки на&nbsp;стенах и&nbsp;дверях, угловые элементы, лепные вставки. Классика в&nbsp;современной подаче — спокойные тона, ровная геометрия.</p>
+        <ul><li>Стеновые рамки</li><li>Угловые декоры</li><li>Окраска под цвет</li></ul>
+      </div>
+      <div class="card-img"><img src="img/coffered-chandelier.jpg" alt="" data-speed="0.1"></div>
+    </article>
+    <article class="card" style="--bg:#b9bea0">
+      <div class="card-text">
+        <span class="num">03</span>
+        <h3>Розетки и&nbsp;центральный декор</h3>
+        <p>Потолочные розетки, кронштейны, капители. Отливаем по&nbsp;вашему эскизу или&nbsp;подбираем из&nbsp;каталога форм студии.</p>
+        <ul><li>Индивидуальные формы</li><li>Реставрация лепнины</li><li>Подбор под люстру</li></ul>
+      </div>
+      <div class="card-img"><img src="img/rosette-scroll.jpg" alt="" data-speed="0.1"></div>
+    </article>
+    <article class="card" style="--bg:#a9ae92">
+      <div class="card-text">
+        <span class="num">04</span>
+        <h3>Под ключ</h3>
+        <p>Замер, дизайн-проект, изготовление, монтаж и&nbsp;финишная покраска. Один подрядчик на&nbsp;весь декор вместо&nbsp;пяти.</p>
+        <ul><li>Выезд на&nbsp;замер</li><li>Монтаж своей бригадой</li><li>Гарантия на&nbsp;работы</li></ul>
+      </div>
+      <div class="card-img"><img src="img/coffered-gold.jpg" alt="" data-speed="0.1"></div>
+    </article>
+  </div>
+</section>
+
+<!-- QUOTE with parallax -->
+<section class="quote">
+  <div class="quote-bg"><img src="img/ceiling-dark.jpg" alt="" data-speed="0.3"></div>
+  <div class="quote-shade"></div>
+  <blockquote class="wrap">
+    <p class="split-words">Гипс — единственный материал, который помнит прикосновение мастера.</p>
+    <cite>Иван Абрамашвили</cite>
+  </blockquote>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery section" id="gallery">
+  <div class="wrap gallery-head">
+    <div>
+      <p class="eyebrow">Галерея работ</p>
+      <h2 class="split">Из мастерской — на потолки и стены</h2>
+    </div>
+    <p class="gallery-note reveal-up">Нажмите на работу, чтобы рассмотреть ближе.</p>
+  </div>
+  <div class="wrap grid">
+    <figure class="g" data-src="img/rosette-gold.jpg" style="--ar:1/1"><div class="ph"><img src="img/rosette-gold.jpg" alt="Золочёная розетка" data-speed="0.08"></div><figcaption><span>Золочёная розетка</span><i>01</i></figcaption></figure>
+    <figure class="g" data-src="img/cornice-vine.jpg" style="--ar:4/3"><div class="ph"><img src="img/cornice-vine.jpg" alt="Карниз с виноградной лозой" data-speed="0.08"></div><figcaption><span>Карниз с виноградной лозой</span><i>02</i></figcaption></figure>
+    <figure class="g" data-src="img/rosette-scroll.jpg" style="--ar:4/3"><div class="ph"><img src="img/rosette-scroll.jpg" alt="Потолочная розетка" data-speed="0.08"></div><figcaption><span>Потолочная розетка</span><i>03</i></figcaption></figure>
+    <figure class="g" data-src="img/fireplace.jpg" style="--ar:4/3"><div class="ph"><img src="img/fireplace.jpg" alt="Каминный портал" data-speed="0.08"></div><figcaption><span>Каминный портал</span><i>04</i></figcaption></figure>
+    <figure class="g" data-src="img/corner-scroll.jpg" style="--ar:3/4"><div class="ph"><img src="img/corner-scroll.jpg" alt="Угловой декор" data-speed="0.08"></div><figcaption><span>Угловой декор</span><i>05</i></figcaption></figure>
+    <figure class="g" data-src="img/coffered-chandelier.jpg" style="--ar:4/3"><div class="ph"><img src="img/coffered-chandelier.jpg" alt="Кессонный потолок" data-speed="0.08"></div><figcaption><span>Кессонный потолок</span><i>06</i></figcaption></figure>
+    <figure class="g" data-src="img/oval-ceiling.jpg" style="--ar:3/4"><div class="ph"><img src="img/oval-ceiling.jpg" alt="Овальный потолок" data-speed="0.08"></div><figcaption><span>Овальный потолок</span><i>07</i></figcaption></figure>
+    <figure class="g" data-src="img/curved-mouldings.jpg" style="--ar:4/3"><div class="ph"><img src="img/curved-mouldings.jpg" alt="Скруглённые молдинги" data-speed="0.08"></div><figcaption><span>Скруглённые молдинги</span><i>08</i></figcaption></figure>
+    <figure class="g" data-src="img/arches-cornice.jpg" style="--ar:4/3"><div class="ph"><img src="img/arches-cornice.jpg" alt="Арочные ниши и карниз" data-speed="0.08"></div><figcaption><span>Арочные ниши и карниз</span><i>09</i></figcaption></figure>
+    <figure class="g" data-src="img/coffered-gold.jpg" style="--ar:3/4"><div class="ph"><img src="img/coffered-gold.jpg" alt="Кессоны с золотом" data-speed="0.08"></div><figcaption><span>Кессоны с золотом</span><i>10</i></figcaption></figure>
+    <figure class="g" data-src="img/greek-key.jpg" style="--ar:4/3"><div class="ph"><img src="img/greek-key.jpg" alt="Карниз «греческий меандр»" data-speed="0.08"></div><figcaption><span>Карниз «греческий меандр»</span><i>11</i></figcaption></figure>
+    <figure class="g" data-src="img/arched-windows.jpg" style="--ar:4/3"><div class="ph"><img src="img/arched-windows.jpg" alt="Арочные проёмы" data-speed="0.08"></div><figcaption><span>Арочные проёмы</span><i>12</i></figcaption></figure>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process section" id="process">
+  <div class="wrap">
+    <p class="eyebrow">Как мы работаем</p>
+    <h2 class="split">От эскиза до идеального угла</h2>
+    <ol class="steps">
+      <li><span>01</span><h4>Замер и идея</h4><p>Приезжаем, смотрим помещение, обсуждаем стиль и бюджет.</p></li>
+      <li><span>02</span><h4>Эскиз</h4><p>Рисуем раскладку и подбираем формы из каталога или создаём новые.</p></li>
+      <li><span>03</span><h4>Отливка</h4><p>Отливаем элементы вручную, шлифуем, дорабатываем детали.</p></li>
+      <li><span>04</span><h4>Монтаж и покраска</h4><p>Устанавливаем, стыкуем до незаметных швов, красим в нужный оттенок.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Обратная связь</p>
+      <h2 class="split">Расскажите, что хотите украсить</h2>
+      <p class="lead">Оставьте заявку — Иван свяжется с вами, обсудит задачу и назовёт примерную стоимость. Работаем в Алматы и по всему Казахстану.</p>
+      <ul class="contacts">
+        <li><span>Телефон</span><a href="tel:+77087711143">+7 708 771 1143</a></li>
+        <li><span>WhatsApp</span><a href="https://wa.me/77087711143" target="_blank" rel="noopener">Написать</a></li>
+        <li><span>Почта</span><b>—</b></li>
+        <li><span>Мастерская</span><b>г. Алматы</b></li>
+        <li><span>География</span><b>по всему Казахстану</b></li>
+      </ul>
+    </div>
+    <form class="form" id="form" novalidate>
+      <label><span>Имя</span><input type="text" name="name" placeholder="Как к вам обращаться" required></label>
+      <label><span>Телефон или Telegram</span><input type="text" name="contact" placeholder="+7 ..." required></label>
+      <label><span>Что нужно сделать</span>
+        <select name="type"><option>Карнизы</option><option>Молдинги и панели</option><option>Розетки / декор</option><option>Под ключ</option><option>Пока не знаю — нужен совет</option></select>
+      </label>
+      <label><span>Сообщение</span><textarea name="msg" rows="3" placeholder="Площадь, стиль, пожелания"></textarea></label>
+      <button class="btn btn-solid" type="submit"><span>Отправить заявку</span><i>→</i></button>
+      <p class="form-ok" id="formOk">Спасибо! Иван скоро свяжется с вами.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER (reveal) -->
+<footer class="footer" id="footer">
+  <svg class="foot-orn" viewBox="0 0 200 200"><use href="#orn"/></svg>
+  <div class="footer-big">Samara Gips</div>
+  <div class="footer-bar">
+    <span>© 2026 Samara Gips · Иван Абрамашвили</span>
+    <a href="#top">Наверх ↑</a>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox"><img src="" alt=""><button aria-label="Закрыть">×</button></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
